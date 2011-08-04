@@ -44,7 +44,7 @@ en:
     preview_size: Size of the review snippets
     include_unapproved: Include unapproved reviews in listings
     show_email: Show email addresses
-    feedback_rating: Rate helpfullness
+    feedback_rating: Rate feedback
     require_login: Require user to be logged in
     your_name: Your name
     your_location: Your location
