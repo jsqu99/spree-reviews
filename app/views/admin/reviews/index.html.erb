@@ -20,7 +20,7 @@
         <%= l review.created_at, :format => :long %>
       </td>
       <td>
-        <%= review.name %> / <%= review.user.try(:email) %>
+        <%= review.user ? mail_to(review.user.try(:email), review.name) : review.name %>
       </td>
       <td>
         <%= txt_stars(review.rating) %>
