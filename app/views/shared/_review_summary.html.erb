@@ -1,6 +1,6 @@
 <div id="reviews">
   <%= render :partial => 'shared/rating', :locals => {:product => @product, :review => 0} %>
-  <% for review in @product.reviews.approval_filter.preview %>
+  <% for review in @product.reviews.localized(I18n.locale).approval_filter.preview %>
     <%= render :partial => 'shared/review', :locals => {:review => review} %>
   <% end %>
   <% if Spree::Reviews::Config[:feedback_rating] && ((Spree::Reviews::Config[:require_login] && current_user) || !Spree::Reviews::Config[:require_login]) %>

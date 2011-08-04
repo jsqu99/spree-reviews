@@ -13,6 +13,9 @@ class Review < ActiveRecord::Base
 
   scope :oldest_first, :order => "created_at asc"
   scope :preview,      :limit => Spree::Reviews::Config[:preview_size], :order=>"created_at desc"
+  
+  scope :localized, lambda { |lc| where('reviews.locale = ?', lc) }
+  
   attr_protected :user_id, :product_id
 
   def feedback_stars
