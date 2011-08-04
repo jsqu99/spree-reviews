@@ -42,6 +42,8 @@ en:
     manage_settings: Control the display of reviews
     preview_size: Size of the review snippets
     include_unapproved: Include unapproved reviews in listings
+    show_email: Show email addresses
+    rate_helpfulness: Rate helpfullness
     your_name: Your name
     your_location: Your location
   star:
