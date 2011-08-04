@@ -44,6 +44,7 @@ en:
     include_unapproved: Include unapproved reviews in listings
     show_email: Show email addresses
     rate_helpfulness: Rate helpfullness
+    require_login: Require user to be logged in
     your_name: Your name
     your_location: Your location
   star:

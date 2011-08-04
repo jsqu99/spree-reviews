@@ -1,5 +1,7 @@
 class ReviewsController < Spree::BaseController
   helper Spree::BaseHelper
+  
+  before_filter :check_authorization, :except => [:terms]
 
   def index
     @product = Product.find_by_permalink params[:product_id]
@@ -30,4 +32,12 @@ class ReviewsController < Spree::BaseController
   
   def terms
   end
+  
+  private
+
+  def check_authorization
+    return true unless Spree::Reviews::Config[:require_login]
+    return access_denied unless current_user
+  end
+  
 end

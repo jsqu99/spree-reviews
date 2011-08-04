@@ -16,6 +16,10 @@
     <%= check_box_tag('preferences[show_email]', "1", Spree::Reviews::Config[:show_email]) %>
   </p>
   <p>
+    <label><%= t("spree_reviews.require_login") %>:</label>
+    <%= check_box_tag('preferences[require_login]', "1", Spree::Reviews::Config[:require_login]) %>
+  </p>
+  <p>
     <label><%= t('spree_reviews.preview_size') %>:</label>
     <%= text_field_tag('preferences[preview_size]', Spree::Reviews::Config[:preview_size], :size => 3) %>
   </p>
