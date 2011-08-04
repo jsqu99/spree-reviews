@@ -20,6 +20,7 @@ class ReviewsController < Spree::BaseController
     @review = Review.new(params[:review])
     @review.product = @product
     @review.user = current_user if user_signed_in?
+    @review.locale = I18n.locale.to_s
     
     authorize! :create, @review
     

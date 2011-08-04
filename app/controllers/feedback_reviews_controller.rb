@@ -5,6 +5,7 @@ class FeedbackReviewsController < Spree::BaseController
 
     @review = Review.find_by_id(params[:review_id])
     if @review && @feedback_review = @review.feedback_reviews.new(params[:feedback_review])
+      @feedback_review.locale = I18n.locale.to_s
       authorize! :create, @feedback_review 
       @feedback_review.save
     end
