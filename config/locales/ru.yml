@@ -5,6 +5,14 @@ ru:
         title: Заголовок
         review: Содержание
         rating: Рейтинг
+        name: Ваше имя
+    models:
+      review:
+        zero: "0 отзывов"
+        one: "%{count} отзыв"
+        few: "%{count} отзыва"
+        other: "%{count} отзывов"
+
   write_your_own_review: Оставьте свой отзыв
   review_management: Управление отзывами
   review_management_description: Управление отзывами покупателей
@@ -33,6 +41,7 @@ ru:
   guideline_text: Мы оставляем за собой право не публиковать отзывы не имеющие отношения к продукту
   terms_and_conditions: Условия и соглашения
   review_guidelines: Советы по составлению отзывов
+  review_name: Ваше имя
   review_header: Отзывы
   date_: Дата
   for: для
@@ -42,11 +51,6 @@ ru:
   by: by
   submitted_on: Добавлено
   based_upon: "на основе"
-  review:
-    zero: "0 отзывов"
-    one: "%{count} отзыв"
-    few: "%{count} отзыва"
-    other: "%{count} отзывов"
   voice:
     zero: "0 голосов"
     one: "%{count} голос"
