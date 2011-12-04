@@ -1,7 +1,8 @@
 require 'spree_core'
+require 'cancan'
 
 module SpreeReviews
-  
+
   class AbilityDecorator
     include CanCan::Ability
 
